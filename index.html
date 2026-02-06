@@ -1,19 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenida - OncoCalm</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- Estilos -->
     <style>
         body {
             font-family: 'Outfit', sans-serif;
             background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
             min-height: 100vh;
+            margin: 0;
         }
         .font-serif {
             font-family: 'Playfair Display', serif;
@@ -31,13 +34,16 @@
             to { opacity: 1; transform: translateY(0); }
         }
     </style>
-<script type="importmap">
+
+    <!-- Importmap para React y GenAI -->
+    <script type="importmap">
 {
   "imports": {
     "react": "https://esm.sh/react@^19.2.4",
+    "react-dom": "https://esm.sh/react-dom@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
     "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.40.0"
+    "react/": "https://esm.sh/react@^19.2.4/"
   }
 }
 </script>
@@ -46,3 +52,4 @@
     <div id="root"></div>
 </body>
 </html>
+
